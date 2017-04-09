@@ -1,0 +1,34 @@
+<scroll-view class="sv" scroll-x="1">
+  <view wx:for="{{title}}" wx:key="id" bindtap="handle{{index}}">
+    <text>{{index}}.{{item}}</text>
+  </view>
+</scroll-view>
+<swiper autoplay="1">
+  <block wx:for="{{ [1, 2, 3, 4] }}" wx:key="class">
+    <swiper-item class="si-{{ index + 1 }}">
+      <text> {{ index + 1 }} </text>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="weui-panel__bd">
+  <view class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+      <image class="weui-media-box__thumb" src="../images/icon_nav_z-index.png" />
+    </view>
+    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+      <view class="weui-media-box__title">标题一</view>
+      <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+    </view>
+  </view>
+
+
+  <view class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+      <image bindtap="goToMap" class="weui-media-box__thumb" src="{{ userInfo.avatarUrl }}" />
+    </view>
+    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+      <view class="weui-media-box__title">标题二</view>
+      <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+    </view>
+  </view>
+</view>

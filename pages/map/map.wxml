@@ -1,0 +1,23 @@
+<map id="map" 
+    longitude="{{ longitude }}" 
+    latitude="{{ latitude }}" 
+    scale="16" 
+    show-location
+    style="width: 100%; height: {{ windowHeight }}px;"
+    circles="{{ radius }}"
+></map>
+
+
+<!--<text>{{ latitude }} ____ {{ longitude }}</text>-->
+<!--
+    circles="{{ radius }}"
+    polyline="{{ poline }}"
+    show-location 
+    markers="{{ markers }}" 
+
+    bindmarkertap="markertap"
+    show-location 
+    bindregionchange="regionchange" 
+    104.06586637832642
+    30.6573621397176
+-->
